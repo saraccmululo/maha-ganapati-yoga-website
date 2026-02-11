@@ -4,7 +4,7 @@ export default function Schedule() {
       day: "Segunda-feira",
       sessions: [
         { time: "8:00 - 9:00", type: "Presencial e online" },
-        { time: "18:00 - 19:00", type: "Presencial e online" },
+        { time: "19:00 - 20:00", type: "Presencial e online" },
       ],
     },
     {

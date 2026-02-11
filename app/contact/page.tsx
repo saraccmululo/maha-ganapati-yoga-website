@@ -19,9 +19,9 @@ export default function ContactPage() {
         <p className="text-base md:text-2xl text-center text-foreground mt-4 md:mt-8 md:mb-4">
           Dúvidas?
         </p>
-        <p className="text-base md:text-2xl text-center text-foreground md:mb-6">
-          Fale conosco diretamente pelo WhatsApp, Instagram or envie sua
-          mensagem pelo formulário abaixo.
+        <p className="text-base md:text-xl text-center text-foreground md:mb-4">
+          Fale conosco diretamente pelo WhatsApp, Instagram ou envie sua
+          mensagem abaixo.
         </p>
         <p className="text-base md:text-xl text-center text-foreground">
           Será um prazer conversarmos!

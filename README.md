@@ -1,6 +1,14 @@
  # Maha Ganapati Yoga – Studio Website
 
-![Website Screenshot](./screenshot.png) <!-- Optional: add a screenshot of the site -->
+ ![Homepage Screenshot](./public/screenshots/homepage.png)
+ ![Contact page Screenshot](./public/screenshots/contact.png)
+
+
+## Live Website
+
+Check out the live Maha Ganapati Yoga website on Vercel:
+(https://maha-ganapati-yoga.vercel.app)
+
 
 **Next.js + Tailwind CSS website for Maha Ganapati Yoga studio** – fully responsive, with contact form integration using EmailJS, WhatsApp & Instagram links, and dynamic event listings.
 
@@ -52,12 +60,6 @@ I handled **the entire frontend development** for this project, including:
 
 ---
 
-## Live Demo
-
-Check out the live website: [Maha Ganapati Yoga](https://your-deployed-site.vercel.app)  
-
----
-
 ## Getting Started (For Developers)
 
 If you want to run this project locally:
@@ -90,6 +92,6 @@ yarn dev
 
 Open http://localhost:3000 to view it in your browser.
 
-License:
+## License
 
 This project is built for the client Maha Ganapati Yoga. Not for public redistribution without permission.

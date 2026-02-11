@@ -11,22 +11,22 @@ export default function Schedule() {
       day: "Terça-feira",
       sessions: [
         { time: "8:00 - 9:00", type: "Presencial e online" },
-        { time: "18:00 - 19:00", type: "Presencial e online" },
+        { time: "19:00 - 20:00", type: "Presencial e online" },
       ],
     },
     {
       day: "Quarta-feira",
       sessions: [
         { time: "7:00 - 8:00", type: "Presencial e online" },
-        { time: "12:00 - 13:00", type: "Presencial e online" },
-        { time: "18:00 - 19:00", type: "Presencial e online" },
+        { time: "15:30 - 16:30", type: "Presencial e online" },
+        { time: "19:00 - 20:00", type: "Presencial e online" },
       ],
     },
     {
       day: "Quinta-feira",
       sessions: [
         { time: "8:00 - 9:00", type: "Presencial e online" },
-        { time: "18:00 - 19:00", type: "Presencial e online" },
+        { time: "19:00 - 20:00", type: "Presencial e online" },
       ],
     },
   ];

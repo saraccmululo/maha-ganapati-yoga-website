@@ -1,65 +1,117 @@
+import Link from "next/link";
 import Image from "next/image";
+import logo from "../public/logo.jpeg";
+import PhotoCarousel from "@/components/Carousel";
+import { homepagePhotos } from "@/data/galleryPhotos";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="flex flex-col bg-background text-foreground">
+      {/* HERO */}
+      <section className="px-4 pt-8 md:pt-20 pb-10 text-center">
+        {/* HERO */}
+        <section className="relative px-2 py-10 md:px-4 md:py-20 text-center overflow-hidden">
+          
+          {/* Faint logo background */}
+          <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src={logo}
+              alt="Maha Ganapati Yoga Logo"
+              className="opacity-30 w-7/12 md:w-3/4 max-w-xs sm:max-w-sm md:max-w-md"
+              priority
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+            {/* Second Faint logo background Option:
+            <Image
+              src={logo}
+              alt="Maha Ganapati Yoga Logo"
+              className="opacity-30 w-3/4 max-w-xs sm:max-w-sm md:max-w-md"
+              priority
+            />
+            */}
+          </div>
+
+          {/* Hero content */}
+          <div className="relative z-10">
+            <h1 className="text-lg md:text-3xl font-extrabold mb-2 tracking-wide">
+              Maha Ganapati Yoga
+            </h1>
+            <p className="text-sm md:text-lg text-foreground font-bold max-w-md mx-auto mb-6">
+              Yoga - Pranayama - Meditação
+            </p>
+          </div>
+        </section>
+
+        {/* SERVICES / BENEFITS */}
+        <section className="px-4 py-6 md:py-12 bg-background">
+          <h2 className="text-md md:text-2xl font-bold text-center mb-2 md:mb-6">
+            Hatha e Ashtanga Yoga para equilíbrio, presença e bem-estar.
+          </h2>
+          <h2 className="text-sm md:text-xl font-bold text-center mb-6">
+            Prática consciente para corpo e mente em Bom Jardim - RJ.
+          </h2>
+          <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 lg:grid-cols-3">
+            {/* Card 1 */}
+            <div className="bg-(--background)/90 p-2 md:p-6 rounded-2xl border-2 border-primary  shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="font-semibold mb-2 text-primary text-md md:text-lg">
+                Corpo e flexibilidade
+              </h3>
+              <p className="text-(--foreground)/70 text-sm md:text-md">
+                Fortalecimento, mobilidade e alinhamento com segurança.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="bg-(--background)/90 p-2 md:p-6 rounded-2xl border-2 border-primary shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="font-semibold mb-2 text-primary text-md md:text-lg">
+                Redução do estresse
+              </h3>
+              <p className="text-(--foreground)/70 text-sm md:text-md">
+                Respiração, presença e consciência corporal.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="bg-(--background)/90 p-2 md:p-6 rounded-2xl border-2 border-primary shadow-lg hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="font-semibold mb-2 text-primary text-md md:text-lg">
+                Para todos os níveis
+              </h3>
+              <p className="text-(--foreground)/70 text-sm md:text-md">
+                Aulas adaptadas para iniciantes e praticantes experientes.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <Link
+          href="/events"
+          className="text-sm md:text-lg inline-block bg-primary text-background px-4 py-3 md:px-6 md:py-3 rounded-full md:mb-4 font-semibold shadow hover:opacity-90 transition"
+        >
+          Ver horários
+        </Link>
+      </section>
+
+      {/* Carousel */}
+      <section className="px-4 py-4">
+        <PhotoCarousel photos={homepagePhotos} />
+      </section>
+
+      {/* CTA */}
+      <section className="px-2 py-4 md:px-4 md:py-6 mt-12 text-center bg-secondary">
+        <h2 className="text-lg md:text-2xl font-bold mb-2">
+          Pronta para começar sua prática?
+        </h2>
+
+        <p className="text-md md:text-lg text-(--foreground)]/90 mb-6 max-w-md mx-auto">
+          Entre em contato e marque sua aula presencial ou online.
+        </p>
+
+        <Link
+          href="/contact"
+          className="text-sm md:text-lg inline-block bg-primary text-background px-4 py-3 md:px-6 md:py-3 rounded-full mb-4 font-semibold shadow hover:opacity-90 transition"
+        >
+          Falar no WhatsApp
+        </Link>
+      </section>
+    </main>
   );
 }

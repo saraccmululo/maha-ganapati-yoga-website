@@ -6,13 +6,13 @@ export default function EventsPage() {
   const events = [
     {
       title: "Workshop de Yoga",
-      date: "15 de Fevereiro, 2026",
+      date: "15 de Setembro, 2025",
       description: "Focado em respiracao, flexibilidade e forca",
       contact: "Inscriçōes pelo WhatsApp (22 99818 0012) até 10/02/26",
     },
     {
       title: "Aulão de Final de Semana",
-      date: "10 de março, 2026",
+      date: "10 de julho, 2025",
       description: "Venha passar a tarde meditando e praticando yoga",
       contact: "Inscriçōes pelo WhatsApp (22 99818 0012) até 10/02/26",
     },

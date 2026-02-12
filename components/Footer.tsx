@@ -26,22 +26,11 @@ export default function Footer() {
           href="https://www.instagram.com/mahaganapatiyoga/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-foreground/70 hover:text-primary"
+          className="text-sm md:text-base flex items-center gap-2 text-primary hover:opacity-80 transition"
         >
           <InstagramIcon className="w-5 h-5" />
           <span>@mahaganapatiyoga</span>
         </a>
-
-        {/*  
-        <Link
-          href={instagramUrl}
-          target="_blank"
-          className="text-sm md:text-base flex items-center gap-2 text-primary hover:opacity-80 transition"
-        >
-          <InstagramIcon className="w-5 h-5" />
-          <span>Instagram</span>
-        </Link>
-        */}
       </div>
 
       {/* Copyright */}

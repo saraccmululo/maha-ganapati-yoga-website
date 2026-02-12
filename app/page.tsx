@@ -82,8 +82,8 @@ export default function HomePage() {
           </div>
         </section>
         <div className="flex justify-center mb-8">
-          <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-            Primeira aula experimental em turma gratuita!
+          <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-lg text-md md:text-xl font-medium">
+            Aula experimental grátis!
           </span>
         </div>
 

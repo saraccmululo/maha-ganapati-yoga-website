@@ -8,13 +8,13 @@ export default function EventsPage() {
       title: "Workshop de Yoga",
       date: "15 de Setembro, 2025",
       description: "Focado em respiracao, flexibilidade e forca",
-      contact: "Inscriçōes pelo WhatsApp (22 99818 0012) até 10/02/26",
+      contact: "Inscriçōes pelo WhatsApp (22 99818 0012) até 14/09/25",
     },
     {
       title: "Aulão de Final de Semana",
       date: "10 de julho, 2025",
       description: "Venha passar a tarde meditando e praticando yoga",
-      contact: "Inscriçōes pelo WhatsApp (22 99818 0012) até 10/02/26",
+      contact: "Inscriçōes pelo WhatsApp (22 99818 0012) até 09/06/25",
     },
   ];
 

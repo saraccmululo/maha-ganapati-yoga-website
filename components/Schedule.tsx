@@ -36,9 +36,9 @@ export default function Schedule() {
       <h2 className=" text-lg md:text-2xl font-bold text-center mb-2 md:mb-4">
         Quadro de Aulas
       </h2>
-      <p className=" text-sm md:text-lg md:mt-0 text-foreground/70 text-center">
-        *Primeira aula experimental em turma{" "}
-        <span className="font-semibold">gratuita</span>.
+      <p className=" text-sm md:text-lg mb-4 text-foreground/70 text-center">
+        *Aula experimental {""}
+        <span className="font-semibold">grátis</span>
       </p>
 
       <div className="space-y-4">

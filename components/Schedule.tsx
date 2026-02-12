@@ -33,7 +33,13 @@ export default function Schedule() {
 
   return (
     <div className="max-w-4xl mx-auto pt-4 pb-2 md:p-6">
-      <h2 className=" text-lg md:text-2xl font-bold text-center mb-2 md:mb-8">Quadro de Aulas</h2>
+      <h2 className=" text-lg md:text-2xl font-bold text-center mb-2 md:mb-4">
+        Quadro de Aulas
+      </h2>
+      <p className=" text-sm md:text-lg md:mt-0 text-foreground/70 text-center">
+        *Primeira aula experimental em turma{" "}
+        <span className="font-semibold">gratuita</span>.
+      </p>
 
       <div className="space-y-4">
         {classes.map((day) => (
@@ -52,9 +58,7 @@ export default function Schedule() {
                   className="flex justify-between py-1.5 text-(--foreground)/80 text-sm"
                 >
                   <span>{session.time}</span>
-                  <span className="text-(--foreground)/60">
-                    {session.type}
-                  </span>
+                  <span className="text-(--foreground)/60">{session.type}</span>
                 </li>
               ))}
             </ul>

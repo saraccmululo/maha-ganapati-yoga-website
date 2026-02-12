@@ -33,7 +33,7 @@ export default function Navbar() {
               href="/events"
               className="text-lg text-(--foreground)]/70 hover:text-primary transition"
             >
-              Eventos
+              Aulas e Eventos
             </Link>
             <Link
               href="/about"

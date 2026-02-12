@@ -8,10 +8,9 @@ export default function HomePage() {
   return (
     <main className="flex flex-col bg-background text-foreground">
       {/* HERO */}
-      <section className="px-4 pt-8 md:pt-20 pb-10 text-center">
+      <section className="px-4 pt-8 md:pt-20 pb-5 text-center">
         {/* HERO */}
         <section className="relative px-2 py-10 md:px-4 md:py-20 text-center overflow-hidden">
-          
           {/* Faint logo background */}
           <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
             <Image
@@ -49,6 +48,7 @@ export default function HomePage() {
           <h2 className="text-sm md:text-xl font-bold text-center mb-6">
             Prática consciente para corpo e mente em Bom Jardim - RJ.
           </h2>
+
           <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 lg:grid-cols-3">
             {/* Card 1 */}
             <div className="bg-(--background)/90 p-2 md:p-6 rounded-2xl border-2 border-primary  shadow-lg hover:shadow-2xl transition-shadow duration-300">
@@ -81,10 +81,15 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <div className="flex justify-center mb-8">
+          <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
+            Primeira aula experimental em turma gratuita!
+          </span>
+        </div>
 
         <Link
           href="/events"
-          className="text-sm md:text-lg inline-block bg-primary text-background px-4 py-3 md:px-6 md:py-3 rounded-full md:mb-4 font-semibold shadow hover:opacity-90 transition"
+          className="text-sm md:text-lg inline-block bg-primary text-background px-4 py-3 md:px-6 md:py-3 rounded-full md:mb-0 font-semibold shadow hover:opacity-90 transition"
         >
           Ver horários
         </Link>

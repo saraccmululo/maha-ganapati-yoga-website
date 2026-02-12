@@ -1,26 +1,38 @@
 
-import Link from "next/link";
+//import Link from "next/link";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import InstagramIcon from "@/components/icons/InstagramIcon";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const whatsappNumber = "+5522998180012";
-  const instagramUrl = "https://www.instagram.com/mahaganapatiyoga"; 
+  //const instagramUrl = "https://www.instagram.com/mahaganapatiyoga"; 
 
   return (
     <footer className="mt-16 text-center py-6 bg-background text-foreground">
-      {/* Social links */}
+      {/* WhatsApp */}
       <div className="flex justify-center items-center gap-6 mb-4">
-        <Link
+        <a
           href={`https://wa.me/${whatsappNumber.replace(/\D/g, "")}`}
           target="_blank"
           className="text-sm md:text-base flex items-center gap-2 text-primary hover:opacity-80 transition"
         >
           <WhatsAppIcon className="w-5 h-5" />
           <span>WhatsApp</span>
-        </Link>
+        </a>
 
+        {/* Instagram */}
+        <a
+          href="https://www.instagram.com/mahaganapatiyoga/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-foreground/70 hover:text-primary"
+        >
+          <InstagramIcon className="w-5 h-5" />
+          <span>@mahaganapatiyoga</span>
+        </a>
+
+        {/*  
         <Link
           href={instagramUrl}
           target="_blank"
@@ -29,6 +41,7 @@ export default function Footer() {
           <InstagramIcon className="w-5 h-5" />
           <span>Instagram</span>
         </Link>
+        */}
       </div>
 
       {/* Copyright */}

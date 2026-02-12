@@ -38,7 +38,7 @@ export default function ContactPage() {
             </h3>
           </div>
           <p className="text-base md:text-xl text-(--foreground)/70 mb-6">
-            Envia sua dúvidas e marque sua aula.
+            Envie suas dúvidas e marque sua aula.
           </p>
           <Link
             href={`https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(

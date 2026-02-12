@@ -61,7 +61,7 @@ export default function EventsPage() {
           </div>
         </div>
 
-        {/* Special Events */}
+        {/* Photo Gallery */}
         <div className="mt-12">
           <h2 className="text-lg md:text-2xl font-semibold mb-8 text-center">
             Galeria de Fotos (Eventos e Aulas)

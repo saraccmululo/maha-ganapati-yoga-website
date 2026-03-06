@@ -38,7 +38,7 @@ export default function Schedule() {
         <span className="font-semibold">grátis!</span>
       </p>
 
-      <div className="md:space-y-6 w-full">
+      <div className="md:space-y-2 w-full">
         {classes.map((day) => (
           <div
             key={day.day}

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import profilePic from "../../public/profile.jpeg"; 
+import profilePic from "../../public/profile1.jpeg"; 
 
 export default function AboutPage() {
 
@@ -32,7 +32,7 @@ export default function AboutPage() {
             <Image
               src={profilePic}
               alt="Lygia professora de yoga"
-              className="w-full rounded-lg shadow-lg"
+              className=" w-56 md:w-full rounded-lg shadow-lg"
               priority
             />
           </div>
@@ -85,6 +85,12 @@ export default function AboutPage() {
           >
             Entrar em contato
           </Link>
+          <hr className="mt-16"></hr>
+          <h1 className="text-lg md:text-3xl font-bold mt-16 mb-8 text-center">
+            Área de Depoimentos
+          </h1>
+          <p> Novos depoimentos estão por vir.</p>
+          <p>Fiquem ligados!</p>
         </div>
       </section>
     </main>

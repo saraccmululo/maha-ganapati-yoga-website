@@ -1,6 +1,5 @@
 import PhotoCarousel from "@/components/Carousel";
-import Schedule from "@/components/Schedule";
-import { eventsPhotos } from "@/data/galleryPhotos";
+import {academiaTimesHealthClub, empreendedoras, relaxAlma, relaxalmaSoundHealing } from "@/data/galleryPhotos";
 
 export default function EventsPage() {
   const events = [
@@ -22,22 +21,18 @@ export default function EventsPage() {
     <main className="flex flex-col bg-background text-foreground min-h-screen">
       <section className="max-w-4xl mx-auto px-4 py-8 md:py-12">
         {/* Page Title */}
-        <div className="flex flex-col items-center justify-center px-2 py-2 md:px-4 md:py-4 bg-secondary rounded">
-          <h1 className="text-lg md:text-4xl font-bold text-center">
-            Aulas e Eventos
-          </h1>
-        </div>
-        {/* Schedule Component */}
-        <div className="mb-16">
-          <Schedule />
+        <div className="flex flex-col items-center justify-center px-2 py-2 md:px-60 md:py-4 bg-secondary rounded">
+          <h1 className="text-lg md:text-4xl font-bold text-center">Eventos</h1>
         </div>
 
-        {/* Special Events */}
+        {/* Future Events */}
         <div>
-          <h2 className="text-lg md:text-2xl font-semibold mb-6 md:mb-8 text-center">
-            Eventos Especiais
+          <h2 className="text-lg md:text-2xl font-semibold mt-6 mb-6 md:mt-12 md:mb-12 text-center">
+            Próximos Eventos
           </h2>
-
+          <p className="text-center">Novos eventos estão por vir.</p>
+          <p className="text-center">Fiquem ligados!</p>
+          {/* 
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2">
             {events.map((event, idx) => (
               <div
@@ -59,14 +54,30 @@ export default function EventsPage() {
               </div>
             ))}
           </div>
+          */}
         </div>
-
-        {/* Photo Gallery */}
-        <div className="mt-12">
-          <h2 className="text-lg md:text-2xl font-semibold mb-8 text-center">
-            Galeria de Fotos
-            <PhotoCarousel photos={eventsPhotos} />
+        <hr className="mt-16"></hr>
+        {/* Events Photo Gallery */}
+        <div className="mt-16">
+          <h2 className="text-lg md:text-2xl font-semibold text-center mt-6 mb-6 md:mt-12 md:mb-12">
+            Galeria de Fotos dos Eventos
           </h2>
+          <h3 className="text-sm md:text-lg font-semibold mb-6 md:mt-12 text-center">
+            RelaxAlma - Bom Jardim/RJ
+          </h3>
+          <PhotoCarousel photos={relaxAlma} />
+          <h3 className="text-md md:text-lg font-semibold mt-16 mb-6 md:mt-18 text-center">
+            RelaxAlma e Sound Healing - Bom Jardim/RJ
+          </h3>
+          <PhotoCarousel photos={relaxalmaSoundHealing} />
+          <h3 className="text-md md:text-lg font-semibold mt-16 mb-6 md:mt-18 text-center">
+            Aulão na Academia Times Health Club - Bom Jardim/RJ
+          </h3>
+          <PhotoCarousel photos={academiaTimesHealthClub} />
+          <h3 className="text-md md:text-lg font-semibold mt-16 mb-6 md:mt-18 text-center">
+            Encontro de Empreendedoras - Duas Barras/RJ
+          </h3>
+          <PhotoCarousel photos={empreendedoras} />
         </div>
       </section>
     </main>

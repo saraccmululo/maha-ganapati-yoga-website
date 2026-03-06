@@ -30,10 +30,16 @@ export default function Navbar() {
           {/* DESKTOP LINKS */}
           <div className="hidden md:flex items-center gap-6">
             <Link
+              href="/schedule"
+              className="text-lg text-(--foreground)]/70 hover:text-primary transition"
+            >
+              Aulas
+            </Link>
+            <Link
               href="/events"
               className="text-lg text-(--foreground)]/70 hover:text-primary transition"
             >
-              Aulas e Eventos
+              Eventos
             </Link>
             <Link
               href="/about"
@@ -74,6 +80,13 @@ export default function Navbar() {
         {/* MOBILE MENU */}
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-2">
+            <Link
+              href="/schedule"
+              className=" block text-base text-(--foreground)]/70 hover:text-primary transition"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Aulas
+            </Link>
             <Link
               href="/events"
               className=" block text-base text-(--foreground)]/70 hover:text-primary transition"

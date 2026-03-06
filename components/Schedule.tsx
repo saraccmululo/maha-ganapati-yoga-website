@@ -32,20 +32,17 @@ export default function Schedule() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto pt-4 pb-2 md:p-6">
-      <h2 className=" text-lg md:text-2xl font-bold text-center mb-2 md:mb-4">
-        Quadro de Aulas
-      </h2>
+    <div className="pt-4 pb-2">
       <p className=" text-sm md:text-lg mb-4 text-foreground/70 text-center">
-        *Aula experimental {""}
-        <span className="font-semibold">grátis</span>
+        Agende sua aula experimental {""}
+        <span className="font-semibold">grátis!</span>
       </p>
 
-      <div className="space-y-4">
+      <div className="md:space-y-6 w-full">
         {classes.map((day) => (
           <div
             key={day.day}
-            className="bg-(--background)/90 p-2 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            className="bg-(--background)/90 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 w-full"
           >
             <h3 className="text-sm md:text-lg font-semibold md:mb-2 text-primary">
               {day.day}

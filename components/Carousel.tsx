@@ -19,7 +19,7 @@ export default function PhotoCarousel({photos}: PhotoCarouselProps) {
   };
 
   return (
-    <div className="relative w-full max-w-xl mx-auto mt-8 md:mt-12">
+    <div className="relative w-full max-w-xl mx-auto">
       {/* IMAGE */}
       <div className="overflow-hidden rounded-2xl shadow-lg">
         <div

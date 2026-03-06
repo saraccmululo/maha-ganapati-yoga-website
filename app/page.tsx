@@ -48,7 +48,7 @@ export default function HomePage() {
           <h2 className="text-sm md:text-xl font-bold text-center mb-6">
             Prática consciente para corpo e mente em Bom Jardim - RJ.
           </h2>
-
+        
           <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 lg:grid-cols-3">
             {/* Card 1 */}
             <div className="bg-(--background)/90 p-2 md:p-6 rounded-2xl border-2 border-primary  shadow-lg hover:shadow-2xl transition-shadow duration-300">
@@ -81,14 +81,18 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <div className="flex justify-center mb-8">
-          <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-lg text-md md:text-xl font-medium">
-            Aula experimental grátis!
-          </span>
+        <div className="flex flex-col justify-center mb-8">
+          <p className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-t-lg text-md md:text-xl font-medium">
+            Aulas físicas e online.
+          </p>
+          <p className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-b-lg text-md md:text-xl font-medium">
+            Marque sua aula experimental grátis!
+          </p>
+          
         </div>
 
         <Link
-          href="/events"
+          href="/schedule"
           className="text-sm md:text-lg inline-block bg-primary text-background px-4 py-3 md:px-6 md:py-3 rounded-full md:mb-0 font-semibold shadow hover:opacity-90 transition"
         >
           Ver horários

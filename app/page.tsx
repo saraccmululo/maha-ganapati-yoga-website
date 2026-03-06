@@ -86,7 +86,7 @@ export default function HomePage() {
         </section>
         <div className="flex flex-col justify-center mb-8">
           <p className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-t-lg text-md md:text-xl font-medium">
-            Aulas físicas e online.
+            Aulas presenciais e online.
           </p>
           <p className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-b-lg text-md md:text-xl font-medium">
             Marque sua aula experimental grátis!

@@ -38,13 +38,13 @@ export default function Schedule() {
         <span className="font-semibold">grátis!</span>
       </p>
 
-      <div className="md:space-y-2 w-full">
+      <div className="md:space-y-1 w-full">
         {classes.map((day) => (
           <div
             key={day.day}
             className="bg-(--background)/90 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 w-full"
           >
-            <h3 className="text-sm md:text-lg font-semibold md:mb-2 text-primary">
+            <h3 className="text-sm md:text-lg font-semibold mb-0 md:mb-1 text-primary">
               {day.day}
             </h3>
 

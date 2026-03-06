@@ -5,6 +5,9 @@ import PhotoCarousel from "@/components/Carousel";
 import { homepagePhotos } from "@/data/galleryPhotos";
 
 export default function HomePage() {
+  const whatsappNumber = "+5522998180012";
+  const whatsappMessage =
+    "Olá, gostaria de saber mais informaçōes sobre aula de Yoga.";
   return (
     <main className="flex flex-col bg-background text-foreground">
       {/* HERO */}
@@ -48,7 +51,7 @@ export default function HomePage() {
           <h2 className="text-sm md:text-xl font-bold text-center mb-6">
             Prática consciente para corpo e mente em Bom Jardim - RJ.
           </h2>
-        
+
           <div className="grid gap-6 max-w-4xl mx-auto sm:grid-cols-2 lg:grid-cols-3">
             {/* Card 1 */}
             <div className="bg-(--background)/90 p-2 md:p-6 rounded-2xl border-2 border-primary  shadow-lg hover:shadow-2xl transition-shadow duration-300">
@@ -88,7 +91,6 @@ export default function HomePage() {
           <p className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-b-lg text-md md:text-xl font-medium">
             Marque sua aula experimental grátis!
           </p>
-          
         </div>
 
         <Link
@@ -115,7 +117,10 @@ export default function HomePage() {
         </p>
 
         <Link
-          href="/contact"
+          href={`https://wa.me/${whatsappNumber.replace(/\D/g, "")}?text=${encodeURIComponent(
+            whatsappMessage,
+          )}`}
+          target="_blank"
           className="text-sm md:text-lg inline-block bg-primary text-background px-4 py-3 md:px-6 md:py-3 rounded-full mb-4 font-semibold shadow hover:opacity-90 transition"
         >
           Falar no WhatsApp
